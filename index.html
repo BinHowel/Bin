@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Audience Overview</title>
+		<!--bootstrap图标库-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		
+		<!--echarts组件-->
+		<script type="text/javascript" src="js/echarts.min.js"></script>
+	</head>
+	<body>
+		<!--页面页首-->
+		<header>
+			<div class="logo">
+				<button>LOGO</button>
+			</div>
+			
+			<nav class="header-nav">
+				<a><i class="bi bi-gear-fill"></i></a>
+				<a><i class="bi bi-bell-fill"></i></a>
+				<button class="logout">Log Out</button>
+			</nav>
+		</header>
+	
+		
+		<!--页面主体-->
+		<div class="container">
+			
+			<!--页面标题部分-->
+			<div class="title">
+				<div>
+					<h1>Audience Overview</h1>
+					<h5>Roseville,CA</h6>
+				</div>
+				<nav class="title-nav">
+					<ul>
+						<li class="nav-item"><a>DASHBOARD</a></li>
+						<li class="nav-item"><a>PROJECTS</a></li>
+						<li class="nav-item"><a>CALENDAR</a></li>
+						<li class="nav-item"><a>MAILBOX</a></li>
+						<li class="nav-item"><a>SETTINGS</a></li>
+						<div class="slider"></div>
+					</ul>
+				</nav>
+			</div>
+			
+			<!--轮播图与表格-->
+			<div class="panel">
+				
+				<!--轮播图-->
+				<div class="swiper">
+					<div class="img-list">
+						<img src="img/1.jpg"/>
+						<img src="img/2.jpg"/>
+						<img src="img/3.jpg"/>
+						<img src="img/4.jpg"/>
+						<img src="img/5.jpg"/>
+					</div>
+					
+					<div class="arrow">
+						<div class="left"> <i class="bi bi-caret-left-fill"></i> </div>
+						<div class="right"> <i class="bi bi-caret-right-fill"></i> </div>
+					</div>
+					
+					<ul class="select-list">
+						<li class="select active" index="0"></li>
+						<li class="select" index="1"></li>
+						<li class="select" index="2"></li>
+						<li class="select" index="3"></li>
+						<li class="select" index="4"></li>
+					</ul>
+				</div>
+				
+				<!--表格-->
+				<div class="table">
+					
+					<div class="table-header">
+						<div>
+							Support Requests
+						</div>
+						<button>
+							View ALL
+						</button>
+					</div>
+					<hr/>
+					<div class="table-body">
+						<table>
+						  <col align="left" />
+						  <col align="left" />
+						  <col align="right" />
+						  
+						  <tr>
+						    <th>TIME</th>
+						    <th>USER NAME</th>
+						    <th class="status">STATUS</th>
+						  </tr>
+						  
+						  <tr>
+						    <td>9:45pm</td>
+						    <td>info@design.com</td>
+						    <td class="status"><button>Solved</button></td>
+						  </tr>
+						  
+						  <tr>
+						    <td>9:45pm</td>
+						    <td>info@design.com</td>
+						    <td class="status"><button>Solved</button></td>
+						  </tr>
+						</table>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<!--曲线图-->
+			<div class="curve">
+				<span>曲线图数据展示</span>
+				<div class="curver-chart" style="width:100%; height:100%;"></div>
+			</div>
+			
+			<!--饼状图与柱状图-->
+			<div class="chart">
+				<div class="chart-item">
+					<span>饼状图数据展示</span>
+					<div class="pie-chart" style="width:100%; height:100%;"></div>
+				</div>
+				
+				<div class="chart-item">
+					<span>柱状图数据展示</span>
+					<div class="bar-chart" style="width:100%; height:100%;"></div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!--页面页尾-->
+		<footer>
+			
+			<div class="link">
+				
+				<div class="logo">
+					<button>LOGO</button>
+				</div>
+				
+				<div class="link-table">
+					<div>
+						<ul>
+							<li><a href="">NEWS</a></li>
+							<li><a href="">CHANNELS</a></li>
+							<li><a href="">OVERVIEW</a></li>
+							<li><a href="">TIMELINE</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li><a href="">SPORT</a></li>
+							<li><a href="">CULTURE</a></li>
+							<li><a href="">NATURE</a></li>
+							<li><a href="">MUSIC</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li><a href="">WEATHER</a></li>
+							<li><a href="">AUTOS</a></li>
+							<li><a href="">LOCAL</a></li>
+							<li><a href="">SHOP</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li><a href="">FUTURE</a></li>
+							<li><a href="">FOOD</a></li>
+							<li><a href="">EARTH</a></li>
+							<li><a href="">TV</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li><a href="">TRAVEL</a></li>
+							<li><a href="">RADIO</a></li>
+						</ul>
+					</div>
+				</div>
+			
+			</div>
+			
+		</footer>
+		
+		<!--轮播图与导航滑块-->
+		<script type="text/javascript" src="js/script.js"></script>
+		<!--echarts图标库相关-->
+		<script type="text/javascript" src="js/chart.js"></script>
+	</body>
+</html>

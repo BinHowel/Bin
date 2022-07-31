@@ -1,0 +1,410 @@
+/**
+ * @cauthor ShuHao 
+ * @Date 22.07.26
+ */
+
+
+/*样式初始化*/
+*{
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #f4f7f8;
+}
+/**
+ * 页首与页尾
+ */
+header{
+	display: flex;
+	align-items: center;
+	background-color: white;
+	width: 100vw;
+	height: 80px;
+	padding: 0 200px
+}
+.logo button{
+	width: 120px;
+	height: 35px;
+	background-color: red;
+	border-radius: 0;
+	color: white;
+}
+.header-nav{
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+}
+.header-nav > a{
+	margin-right: 30px;
+}
+.header-nav > button{
+	margin-left: 10px;
+}
+.logout{
+	padding: 13px 32px;
+	font-size: 13px;
+	background-color: red;
+	color: white;
+}
+
+footer{
+	background-color: #1f2023;
+	width: 100vw;
+	height: 380px;
+	margin-top: 5%;
+	padding: 50px 200px
+	
+}
+.link{
+	margin-top: 30px;
+	display: flex;
+	gap: 100px;
+	width: 100%;
+	height: 100%;
+}
+.link-table{
+	display: flex;
+	gap: 130px;
+}
+.link .link-table ul {
+	list-style: none;
+}
+.link .link-table li {
+	height: 35px;
+	width: 100px;
+}
+.link .link-table li > a{
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+.link .link-table li > a:hover{
+	border-bottom: 2px solid white
+}
+button{
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+}
+
+
+
+/**
+ * 页面主体部分
+ */
+.container{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin: 0 10%;
+}
+
+/*网页主标题部分*/
+.title{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px 0;	
+}
+.title h1{
+	font-weight: lighter;
+}
+.title h5{
+	font-weight: lighter;
+}
+.title-nav ul{
+	position: relative;
+	display: flex;
+	list-style: none;
+}
+.nav-item{
+	text-align: center;
+	width: 140px;
+}
+.nav-item > a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	
+	cursor: pointer;
+}
+.slider{
+	position: absolute;
+	height: 2px;
+	width: 120px;
+	background-color: gainsboro;
+	top: 25px;
+	z-index: -1;
+	left: 10px;
+	transition: all ease, .4s;
+}
+
+/**
+ * 轮播图与表格
+ */
+.panel{
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+/*轮播图*/
+.swiper{
+	background-color: white;
+	width: 50%;
+	height: 380px;
+	overflow: hidden;
+	border:10px solid white;
+	position: relative;
+}
+.img-list{
+	position: relative;
+	display: flex;
+	flex-shrink: 0;
+	flex-grow: 0;
+	height: 100%;
+	transition: all ease, .4s;
+}
+.img-list img{
+	min-width: 100vh;
+}
+.arrow{
+	display: flex;
+	position: relative;
+	bottom: 60%;
+	cursor: pointer;
+}
+.arrow div{
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	width: 30px;
+	height: 60px;
+	
+	color: white;
+	font-size: 25px;
+}
+.left{
+	left: 0;
+}
+.right{
+	right: 0;
+}
+.select-list{
+	display: flex;
+	position: absolute;
+	list-style: none;
+	height: 20px;
+	left: 50%;
+	transform: translate(-50%,0);
+	bottom: 20px;
+	align-items: flex-end;
+}
+.select{
+	margin: 0 5px;
+	height: 10px;
+	width: 8px;
+	background-color: #939393;
+	
+	cursor: pointer;
+	transition: all ease, .4s;
+	
+}
+.select-list > .select.active{
+	background-color: white;
+	height: 15px;
+	transition: all ease, .4s;
+}
+.img-list{
+	right:0px
+}
+
+
+/*表格*/
+.table{
+	background: white;
+	width: 50%;
+	height: 380px;
+	padding: 10px;
+	position: relative;
+}
+.table-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:40px;
+	margin-bottom: 10px;
+	height: 35%;
+}
+.table-header div{
+	font-size: 23px;
+}
+.table-header button{
+	background-color: white;
+	border: 2px solid gainsboro; 
+	font-size: 12px;
+	height: 50px;
+	width: 110px;
+	
+	transition-duration: .4s;
+}
+.table-header button:hover {
+  background-color: gainsboro;
+  color: white;
+}
+.table-body{
+	padding:10px 40px;
+}
+.table-body table{
+	width:100%
+}
+.table-body th{
+	padding: 20px 0;
+	text-align: left;
+}
+.table-body td{
+	padding: 8px 0 20px 0;
+}
+.table hr{
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+.table-body .status{
+	text-align: right;
+}
+.table-body .status button{
+	background-color: #57d14b;
+	font-size: 12px;
+	height: 40px;
+	width: 80px;
+	
+	font-weight: bold;
+	color: white;
+	font-size: 16px;
+}
+
+
+/**
+ * 曲线图
+ */
+.curve{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	height: 450px;
+}
+.curve span{
+	padding: 40px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+/**
+ * 饼图与柱状图
+ */
+.chart{
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+.chart-item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	height: 500px;
+	width: 50%;
+}
+.chart-item span{
+	padding: 40px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.bar-chart{
+	padding: 0 40px;
+}
+
+
+/**
+ * 响应式布局 max-width:800px
+ */
+@media screen  and (max-width:800px){
+	/*页首与页尾部分*/
+	header{
+		width: 100%;
+		padding: 0 10px;
+	}
+	.header-nav > a{
+		margin: 30px;
+	}
+	.header-nav > button{
+		margin: 30px;
+	}
+	footer{
+		width: 100%;
+		height: 100%;
+		padding:30px 10px;
+	}
+	.link{
+		align-items: center;
+		flex-direction: column;
+	}
+	.link-table{
+		width: 100%;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	
+	/*整体*/
+	.container{
+		margin:0 10px;
+	}
+	
+	/*主标部分*/
+	.slider{
+		display:none
+	}
+	.title-nav ul{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+	}
+	.nav-item{
+		height:40px;
+	}
+	.nav-item a:hover{
+		border-bottom: 2px solid gainsboro
+	}
+	
+	/*轮播图与表格*/
+	.swiper{
+		width: 100%;
+	}
+	.table{
+		width: 100%;
+	}
+	.panel{
+		flex-direction: column;
+	}
+	.img-list img{
+		min-width: 100vh;
+	}
+	
+	/*echarts图表部分*/
+	.chart{
+		flex-direction: column;
+	}
+	
+	.chart-item{
+		width: 100%;
+	}
+}
